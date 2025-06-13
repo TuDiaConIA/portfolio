@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Sara Hidalgo Caro</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Mi<span> Portfolio</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="aboutme.html">Sobre mí</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Contáctame</h2>
+        <p>¿Tienes una idea, un proyecto o simplemente quieres decirme hola? ¡Escríbeme!</p>
+        
+    <form id="formulario" action="https://formsubmit.co/tu-correo@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="6" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false" />
+
+        <button type="submit" class="btn-main">Enviar mensaje</button>
+    </form>
+
+    <div id="gracias" style="display:none; margin-top: 40px;">
+        <h3>¡Gracias por tu mensaje!</h3>
+        <p>Me pondré en contacto contigo lo antes posible 😊</p>
+    </div>
+  
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Sara Hidalgo Caro</p>
+    </footer>
+</body>
+<script>
+    document.getElementById('formulario').addEventListener('submit', function (e) {
+        e.preventDefault(); // Evita la redirección por defecto
+
+        const form = e.target;
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(() => {
+            form.style.display = 'none'; // Oculta el formulario
+            document.getElementById('gracias').style.display = 'block'; // Muestra el mensaje
+        }).catch(error => {
+            alert('Hubo un error al enviar el formulario. Intenta más tarde.');
+        });
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - Sara Hidalgo Caro</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="calculadora-body">
+    <div class="container-calculadora">
+        <h1>🧮 Calculadora Web Interactiva</h1>
+        <div class="calculadora">
+            <input type="text" id="pantalla" disabled />
+            <div class="teclado">
+                <button onclick="borrarTodo()">C</button>
+                <button onclick="insertar('%')">%</button>
+                <button onclick="insertar('/')">/</button>
+                <button onclick="retroceso()">⌫</button>
+
+                <button onclick="insertar('7')">7</button>
+                <button onclick="insertar('8')">8</button>
+                <button onclick="insertar('9')">9</button>
+                <button onclick="insertar('*')">x</button>
+
+                <button onclick="insertar('4')">4</button>
+                <button onclick="insertar('5')">5</button>
+                <button onclick="insertar('6')">6</button>
+                <button onclick="insertar('-')">-</button>
+
+                <button onclick="insertar('1')">1</button>
+                <button onclick="insertar('2')">2</button>
+                <button onclick="insertar('3')">3</button>
+                <button onclick="insertar('+')">+</button>
+
+                <button onclick="insertar('0')">0</button>
+                <button onclick="insertar('.')">.</button>
+                <button onclick="calcular()">=</button>
+            </div>
+        </div>
+    <a href="../../index.html" class="volver-btn">← Volver al portfolio</a>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

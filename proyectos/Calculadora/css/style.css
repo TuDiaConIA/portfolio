@@ -1,0 +1,78 @@
+.calculadora-body {
+    background-color: #0b0b0b;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container-calculadora {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.calculadora {
+    background: #111111;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 25px 30px 25px 20px;
+    font-size: 32px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    background-color: #1c1c1c;
+    color: #00f0ff;
+    text-align: right;
+    box-shadow: inset 0 0 8px #050505;
+    box-sizing: border-box;
+}
+
+
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+
+.teclado button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.teclado button:hover {
+    background-color: #007bff;
+    transform:scale(1.05);
+}
+
+.teclado button.doble {
+    grid-column: span 2;
+}
+
+.volver-btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.volver-btn:hover {
+    color: #00bfff;
+}
