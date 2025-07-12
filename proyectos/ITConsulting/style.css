@@ -1,0 +1,59 @@
+
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.logo img{
+    width:120px;
+    height:auto;
+    border-radius: 50%;
+}
+
+.nav-container {
+    padding: 30px 20px; 
+    width: 90%;
+    max-height: 50px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;           /* Menú en horizontal */
+    gap: 25px;               /* Espacio entre elementos */
+    list-style: none;        /* Quita los puntos */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav a {
+    color: rgb(60, 60, 60);            /* O el color que prefieras */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #496b7e;          /* Efecto al pasar el ratón */
+}
+
+
+.card {
+    text-align: center;
+    padding: 0 15%;
+}
+
+.card-img{
+    width: 400px;
+    border-radius: 10px;
+}
