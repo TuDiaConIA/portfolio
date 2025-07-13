@@ -11,10 +11,10 @@
     <meta property="og:image" content="https://portfolio.losjipis.com/img/sara-hidalgo-caro.webp">
 </head>
 <body>
-        <header class="navbar">
+    <header class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a class="navbar-logo" href="#">
+                <a class="navbar-logo" href="index.html">
                     <img id="logo" src="img/logo.webp">
                 </a>
             </div>
@@ -28,8 +28,59 @@
             </nav>
         </div>
     </header>
-    
+    <main class="contacto-container">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? Completa el siguiente formulario o escríbenos directamente.</p>
+
+    <div class="contacto-contenido">
+        <form class="formulario-contacto" action="mailto:contacto@codemetry.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="info-contacto">
+            <h3>También puedes escribirnos a:</h3>
+            <p>📧 contacto@codemetry.com</p>
+            <p>📍 Calle Ficticia 123, Sevilla</p>
+            <p>☎️ +34 665 487 297</p>
+        </div>
+    </div>
+    </main>
     
 
 </body>
+<footer class="footer">
+    <div class="footer-container">
+    <div class="footer-section">
+        <h4>Codemetry IT Consulting</h4>
+        <p>© 2025. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-section">
+        <h4>Enlaces</h4>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="aboutus.html">Sobre nosotros</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: contacto@codemetry.com</p>
+        <p>Tel: +34 600 123 456</p>
+        <p>Madrid, España</p>
+    </div>
+    </div>
+</footer>
+
 </html>
