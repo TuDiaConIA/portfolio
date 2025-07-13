@@ -258,3 +258,48 @@ h3, h4{
 .footer-section a:hover {
     color: #A6FFB4;
 }
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-services {
+    flex-direction: column !important; /* fuerza columna para todas */
+    text-align: center;
+  }
+
+  .card-services-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenido-card-services {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .grid-services {
+    padding: 20px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
