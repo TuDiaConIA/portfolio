@@ -28,19 +28,40 @@
             </nav>
         </div>
     </header>
+    <main class="contacto-container">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? Completa el siguiente formulario o escríbenos directamente.</p>
 
-    <div class="card">
-        <h1>Codemetry IT Consulting</h1>
-        <p>Codemetry IT Consulting es una <span class="consultora">consultora tecnológica</span> especializada en diseño de soluciones digitales, infraestructura cloud, desarrollo de software a medida y ciberseguridad. Nuestro enfoque combina precisión técnica y visión estratégica, ayudando a empresas a evolucionar tecnológicamente con rapidez, seguridad y eficiencia.</p>
-        <img src="img/office.webp" class="card-img">
+    <div class="contacto-contenido">
+        <form class="formulario-contacto" action="mailto:contacto@codemetry.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="info-contacto">
+            <h3>También puedes escribirnos a:</h3>
+            <p>📧 contacto@codemetry.com</p>
+            <p>📍 Calle Ficticia 123, Sevilla</p>
+            <p>☎️ +34 665 487 297</p>
+        </div>
     </div>
+    </main>
+    
+
 </body>
 <footer class="footer">
     <div class="footer-container">
     <div class="footer-section">
         <h4>Codemetry IT Consulting</h4>
         <p>© 2025. Todos los derechos reservados.</p>
-        <p>Web hecha por Sara Hidalgo</p>
     </div>
 
     <div class="footer-section">
@@ -56,8 +77,8 @@
     <div class="footer-section">
         <h4>Contacto</h4>
         <p>Email: contacto@codemetry.com</p>
-        <p>Tel: +34 665 487 297</p>
-        <p>Sevilla, España</p>
+        <p>Tel: +34 600 123 456</p>
+        <p>Madrid, España</p>
     </div>
     </div>
 </footer>
