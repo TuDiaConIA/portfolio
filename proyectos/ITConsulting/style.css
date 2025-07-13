@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-html{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -11,24 +11,31 @@ body {
     flex-direction: column;
     background-color: aliceblue;
 }
-.card-img{
-    margin-top: 20px;
-    box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.3);
-}
-img{
-    max-width: 40%;
+
+/* Imagen general */
+img {
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.logo img{
-    width:120px;
-    height:auto;
+
+/* Imágenes con sombra */
+.card-img,
+.card-team img {
+    margin-top: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
     border-radius: 50%;
 }
 
+/* Header / Navbar */
 .nav-container {
-    padding: 60px 10px 20px 10px; 
-    max-height: 50px;
+    padding: 60px 10px 20px 10px;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -37,16 +44,16 @@ img{
 }
 
 .nav ul {
-    display: flex;           
-    gap: 25px;              
-    list-style: none;        
+    display: flex;
+    gap: 25px;
+    list-style: none;
     margin: 0;
     padding: 0;
     align-items: center;
 }
 
 .nav a {
-    color: rgb(60, 60, 60);           
+    color: rgb(60, 60, 60);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -54,14 +61,14 @@ img{
 }
 
 .nav a:hover {
-    color: #496b7e;         
+    color: #496b7e;
 }
 
-
+/* Team section */
 .grid-team {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; 
+    gap: 10px;
     justify-content: center;
     margin-top: 10px;
 }
@@ -72,32 +79,31 @@ img{
     padding: 10px;
 }
 
-.card{
+.card {
     text-align: center;
     margin: 0 10%;
 }
 
-.card-team img{
-    width: 200px;
-    border-radius: 10px;
-    box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.9);;
-}
-
-h2{
+h2 {
     text-align: center;
 }
-h3, h4{
+
+h3, h4 {
     font-size: 18px;
     font-weight: normal;
 }
-.consultora{
-    color:#1F2A44;
+
+.consultora {
+    color: #1F2A44;
     font-weight: 700;
 }
+
+/* Servicios */
 .grid-services {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 40px 5%;
 }
 
 .card-services {
@@ -109,7 +115,6 @@ h3, h4{
 .fila-normal {
     flex-direction: row;
     margin: 0 0 40px 40px;
-    
 }
 
 .fila-invertida {
@@ -123,15 +128,15 @@ h3, h4{
     border-radius: 10px;
 }
 
-
 .contenido-card-services {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     max-width: 600px;
 }
 
+/* Contacto */
 .contacto-container {
     max-width: 1200px;
     margin: auto;
@@ -169,7 +174,7 @@ h3, h4{
     background-color: #f4f8fc;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .formulario-contacto label {
@@ -222,6 +227,7 @@ h3, h4{
     margin: 10px 0;
 }
 
+/* Footer */
 .footer {
     background-color: #1F2A44;
     color: white;
@@ -249,7 +255,8 @@ h3, h4{
     color: #A6FFB4;
 }
 
-.footer-section p, .footer-section a {
+.footer-section p,
+.footer-section a {
     font-size: 14px;
     color: #dcdcdc;
     text-decoration: none;
@@ -259,47 +266,54 @@ h3, h4{
     color: #A6FFB4;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
 
-  .nav ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 
-  .card-services {
-    flex-direction: column !important; /* fuerza columna para todas */
-    text-align: center;
-  }
+    .card-services {
+        flex-direction: column !important;
+        text-align: center;
+        margin: 20px 0;
+    }
 
-  .card-services-img img {
-    width: 100%;
-    height: auto;
-  }
+    .card-services-img img {
+        width: 100%;
+        height: auto;
+    }
 
-  .contenido-card-services {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+    .contenido-card-services {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
-  .grid-services {
-    padding: 20px;
-  }
+    .grid-services {
+        padding: 20px;
+    }
 
-  form {
-    padding: 10px;
-  }
+    .formulario-contacto {
+        padding: 20px;
+        width: 100%;
+    }
 
-  input, textarea {
-    width: 100%;
-  }
+    input,
+    textarea,
+    button {
+        width: 100%;
+    }
 
-  button {
-    width: 100%;
-  }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }
