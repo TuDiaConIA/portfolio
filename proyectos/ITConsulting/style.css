@@ -112,6 +112,9 @@ h3, h4 {
     gap: 40px;
 }
 
+.card-services-img{
+    width: 400px;
+}
 .fila-normal {
     flex-direction: row;
     margin: 0 0 40px 40px;
@@ -122,18 +125,14 @@ h3, h4 {
     margin: 40px 40px 0 0;
 }
 
-.card-services-img img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
+
 
 .contenido-card-services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    max-width: 600px;
+    max-width: 60%;
 }
 
 /* Contacto */
@@ -266,54 +265,119 @@ h3, h4 {
     color: #A6FFB4;
 }
 
-/* Responsive */
+
+.nav-container {
+    padding: 20px 20px 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #1F2A44;
+    cursor: pointer;
+}
+
+/* Solo en móviles */
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
     }
 
     .nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white;
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: max-content;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .logo img {
+        width: 80px;
     }
 
     .card-services {
-        flex-direction: column !important;
-        text-align: center;
-        margin: 20px 0;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+}
+
+    .card-services-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .card-services-img img {
-        width: 100%;
+        width: 80vw;
         height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .card-services-img img{
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        display: block;
     }
 
     .contenido-card-services {
-        max-width: 100%;
-        padding: 0 20px;
+    max-width: 90%;
     }
+    .fila-normal, .fila-invertida{
+    flex-direction: row;
+    margin: 0;
+    }
+}
 
-    .grid-services {
-        padding: 20px;
-    }
+#scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #425e9d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius:50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+}
 
-    .formulario-contacto {
-        padding: 20px;
-        width: 100%;
-    }
-
-    input,
-    textarea,
-    button {
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+#scrollToTop:hover {
+    background-color: #A6FFB4;
+    color: #1F2A44;
 }

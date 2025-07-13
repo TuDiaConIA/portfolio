@@ -9,80 +9,82 @@
     <meta name="description" content="Codemetry IT Consulting es una consultora tecnológica especializada en diseño de soluciones digitales, infraestructura cloud, desarrollo de software a medida y ciberseguridad. Nuestro enfoque combina precisión técnica y visión estratégica, ayudando a empresas a evolucionar tecnológicamente con rapidez, seguridad y eficiencia.">
     <meta name="author" content="Sara Hidalgo Caro">
     <meta property="og:image" content="https://portfolio.losjipis.com/img/sara-hidalgo-caro.webp">
-<link rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="navbar">
         <div class="nav-container">
             <div class="logo">
                 <a class="navbar-logo" href="index.html">
-                    <img id="logo" src="img/logo.webp">
+                    <img id="logo" src="img/logo.webp" alt="Logo Codemetry">
                 </a>
             </div>
-            <nav class="nav">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="nav" id="menu">
                 <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="services.html">Nuestros servicios</a></li>
                     <li><a href="aboutus.html">Sobre nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main class="contacto-container">
-    <h2>Contacto</h2>
-    <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? Completa el siguiente formulario o escríbenos directamente.</p>
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? Completa el siguiente formulario o escríbenos directamente.</p>
 
-    <div class="contacto-contenido">
-        <form class="formulario-contacto" action="mailto:contacto@codemetry.com" method="POST" enctype="text/plain">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
+        <div class="contacto-contenido">
+            <form class="formulario-contacto" action="mailto:contacto@codemetry.com" method="POST" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required />
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <button type="submit">Enviar mensaje</button>
-        </form>
+                <button type="submit">Enviar mensaje</button>
+            </form>
 
-        <div class="info-contacto">
-            <h3>También puedes escribirnos a:</h3>
-            <p>📧 contacto@codemetry.com</p>
-            <p>📍 Calle Ficticia 123, Sevilla</p>
-            <p>☎️ +34 665 487 297</p>
+            <div class="info-contacto">
+                <h3>También puedes escribirnos a:</h3>
+                <p>📧 contacto@codemetry.com</p>
+                <p>📍 Calle Ficticia 123, Sevilla</p>
+                <p>☎️ +34 665 487 297</p>
+            </div>
         </div>
-    </div>
     </main>
-    
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Codemetry IT Consulting</h4>
+                <p>© 2025. Todos los derechos reservados.</p>
+                <p>Web hecha por Sara Hidalgo</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="aboutus.html">Sobre nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: contacto@codemetry.com</p>
+                <p>Tel: +34 665 487 297</p>
+                <p>Sevilla, España</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <button id="scrollToTop" title="Volver arriba">↑</button>
 </body>
-<footer class="footer">
-    <div class="footer-container">
-    <div class="footer-section">
-        <h4>Codemetry IT Consulting</h4>
-        <p>© 2025. Todos los derechos reservados.</p>
-    </div>
-
-    <div class="footer-section">
-        <h4>Enlaces</h4>
-        <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="services.html">Servicios</a></li>
-        <li><a href="aboutus.html">Sobre nosotros</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-section">
-        <h4>Contacto</h4>
-        <p>Email: contacto@codemetry.com</p>
-        <p>Tel: +34 600 123 456</p>
-        <p>Madrid, España</p>
-    </div>
-    </div>
-</footer>
-
 </html>
